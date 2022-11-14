@@ -47,11 +47,10 @@ Conquiste sua vaga é uma experiência online com muito conteúdo prático e des
 ---
 
 ## 📱 Layout mobile
-![Mobile](assets/img/preview-mobile.gif) 
+<img src="assets/img/preview-mobile.gif" width="300">
 
 ## 💻 Layout web
-
-![WEB](assets/img/preview-web.gif)
+<img src="assets/img/preview-web.gif" width="600">
 
 ---
 
