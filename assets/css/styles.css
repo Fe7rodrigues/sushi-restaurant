@@ -5,7 +5,7 @@
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
+  /*========== Cores ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(19, 64%, 54%);
   --first-color-alt: hsl(19, 64%, 52%);
@@ -15,7 +15,7 @@
   --body-color: hsl(19, 100%, 96%);
   --container-color: hsl(19, 100%, 97%);
 
-  /*========== Font and typography ==========*/
+  /*========== Fonte e tipografia ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
   --title-font: "Lora", serif;
@@ -28,7 +28,7 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
-  /*========== Font weight ==========*/
+  /*========== Espessura da fonte ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
 
@@ -66,7 +66,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: background 0.4s;
-  /* for dark mode animation */
+  /* para animação em modo escuro */
 }
 
 h1,
@@ -91,16 +91,66 @@ img {
 
 /*=============== THEME ===============*/
 
+.nav__buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: color .3s;
+}
 
 /*========== Variables Dark theme ==========*/
 
+body.dark-theme {
+  --first-color: hsl(19, 64%, 58%);
+  --first-color-alt: hsl(19, 64%, 54%);
+  --title-color: hsl(19, 24%, 85%);
+  --text-color: hsl(19, 16%, 65%);
+  --text-color-light: hsl(19, 8%, 96%);
+  --body-color: hsl(19, 12%, 8%);
+  --container-color: hsl(19, 10%, 10%);
+}
 
 /*========== 
-    Color changes in some parts of 
-    the website, in light theme
+   Mudanças de cor em algumas partes do
+     o site, em tema claro
 ==========*/
 
+.dark-theme .bg-header,
+.dark-theme .nav__menu,
+.dark-theme .scrollup {
+  box-shadow: 0 2px 8px hsl(19, 64%, 4%, .5);
+}
 
+.dark-theme .popular__card {
+  box-shadow: 0 8px 20px hsla(19, 64%, 4%, .2);
+}
+
+.dark-theme .newsletter__content {
+  background-color: var(--container-color);
+}
+
+.dark-theme  .newsletter__form,
+.dark-theme .newsletter__input {
+  background-color: var(--body-color);
+}
+
+.dark-theme::-webkit-scrollbar {
+  background-color: hsla(19, 8%, 15%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+  background-color: hsla(19, 8%, 25%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover {
+  background-color: hsla(19, 8%, 35%);
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
@@ -409,6 +459,7 @@ img {
   box-shadow: 0 8px 20px hsla(19, 64%, 44%, .08);
   border-radius: 1rem;
   text-align: center;
+  transition: background .4s; /* para animação em modo escuro */
 }
 
 .popular__img {
@@ -574,6 +625,12 @@ outline: none;
   right: 2rem;
   bottom: -2rem;
   transform: rotate(45deg);
+}
+
+.newsletter__container,
+.newsletter__form,
+.newsletter__input {
+  transition: background .4s; /* para animação em modo escuro */
 }
 /*=============== FOOTER ===============*/
 
@@ -760,10 +817,166 @@ outline: none;
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For small devices */
 
+/* Para pequenos dispositivos */
 
-/* For medium devices */
+@media screen and (max-width: 340px){
+  .container{
+    margin-inline: 1rem;
+  }
 
+  .section {
+    padding-block: 4rem 1rem ;
+  }
 
-/* For large devices */
+  .home__title {
+    font-size: 2rem;
+  }
+  .home__leaf-1 {
+    top: 5rem;
+  }
+  .home__leaf-2 {
+    bottom: 0;
+  }
+
+  .about__leaf {
+    bottom: 8rem;
+  }
+
+  .recently__data-img {
+    right: .5rem;
+  }
+
+  .newsletter__content {
+    padding: 6rem 1rem 2rem;
+  }
+
+  .newsletter__form {
+    flex-direction: column;
+    background: none;
+    row-gap: 1rem;
+  }
+  .newsletter__input {
+    width: initial;
+    padding: 1rem;
+    border-radius: 4rem;
+  }
+  .newsletter__button {
+    justify-content: center;
+  }
+
+  .footer__content {
+    gap: 1.5rem;
+  }
+}
+
+/* Para dispositivos médios */
+
+@media screen and (min-width: 576px){
+  .home__container,
+  .about__container,
+  .recently__container,
+  .newsletter__content{
+    grid-template-columns: .7fr;
+    justify-content: center;
+  }
+
+  .footer__content {
+    grid-template-columns: repeat(3, max-content);
+  }
+
+  @media screen and (min-width: 767px){
+    .nav{
+      column-gap: 3rem;
+    }
+
+    .nav__toggle,
+    .nav__close,
+    .nav__img-1,
+    .nav__img-2 {
+      display: none;
+    }
+
+    .nav__list{
+      flex-direction: row;
+      column-gap: 3rem;
+    }
+
+    .nav__menu {
+      margin-left: auto;
+    }
+
+    .dark-theme .nav__menu {
+      box-shadow: none;
+    }
+
+    .popular__container {
+      grid-template-columns: repeat(2, 250px);
+    }
+
+    .footer__content {
+      grid-template-columns: repeat(4, max-content);
+    }
+
+  }
+
+/* Para dispositivos grandes */
+@media screen and (min-width: 1024px){
+  .section {
+    padding-block: 7rem 1.5rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: .75rem;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+  .home__container {
+    position: relative;
+    grid-template-columns: 480px 500px;
+    padding-block: 7rem 3rem;
+  }
+  .home__data {
+    text-align: initial;
+    order: -1;
+  }
+
+  .home__title img {
+    width: 60px;
+  }
+
+  .home__title div {
+    justify-content: initial;
+    column-gap: 1rem;
+  }
+
+  .home__description {
+    padding-inline: 0 10rem;
+  }
+
+  .home__img {
+    width: 600px;
+    position: absolute;
+    top: 5rem;
+    right: -2rem;
+  }
+
+  .about__container {
+    grid-template-columns: 450px 360px;
+    align-items: center;
+    column-gap: 7rem;
+  }
+
+  .about__data {
+    order: 1;
+  }
+
+  .about__data,
+  .about .section__subtitle,
+  .about .section__title {
+    text-align: initial;
+  }
+}
