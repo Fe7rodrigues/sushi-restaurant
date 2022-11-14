@@ -10,7 +10,7 @@
 
 ## 💻 Sobre o projeto
 
-🍣 Sushi Park - .
+🍣 Sushi Park - sua proposta inovadora e todo o desenvolvimento foi pensado para oferecer o melhor aos nossos clientes.
 
 
 Projeto desenvolvido durante a mentoria **Conquiste sua vaga** oferecido pelo [Pedro Marins](https://conquistesuavaga.com/mentoria).
