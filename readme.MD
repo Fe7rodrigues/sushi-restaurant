@@ -39,16 +39,11 @@ Conquiste sua vaga é uma experiência online com muito conteúdo prático e des
 ---
 
 ## 📱 Layout mobile
-![Mobile](<div style="position:relative;width:fit-content;height:fit-content;">
-            <a style="position:absolute;top:20px;right:1rem;opacity:0.8;" href="https://clipchamp.com/watch/rqSCoyD8ZGs?utm_source=embed&utm_medium=embed&utm_campaign=watch">
-                <img style="height:22px;" src="https://clipchamp.com/e.svg" alt="Made with Clipchamp" />
-            </a>
-            <iframe allowfullscreen style="border:none" src="https://clipchamp.com/watch/rqSCoyD8ZGs/embed" width="640" height="360"></iframe>
-        </div>) 
+![Mobile](assets/img/preview-web.gif)
 
 ## 💻 Layout web
 
-![WEB]()
+![WEB](assets/img/preview-web.gif)
 
 ---
 
