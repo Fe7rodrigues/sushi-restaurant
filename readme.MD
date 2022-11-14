@@ -2,9 +2,17 @@
      🍣 <a href="#" alt="website sushi"> Sushi Website </a>
 </h1>
 
-
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Fe7rodrigues/coffee-website/blob/main/LICENSE) 
-
+<p align="center">
+<img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Fe7rodrigues/sushi-restaurant" />
+<img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/Fe7rodrigues/sushi-restaurant" />
+<img alt="" src="https://img.shields.io/github/repo-size/Fe7rodrigues/sushi-restaurant" />
+<img alt="GitHub Issues" src="https://img.shields.io/github/issues/Fe7rodrigues/sushi-restaurant" />
+<img alt="GitHub Closed Issues" src="https://img.shields.io/github/issues-closed/Fe7rodrigues/sushi-restaurant" />
+<img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/Fe7rodrigues/sushi-restaurant" />
+<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/Fe7rodrigues/sushi-restaurant" />
+<img alt="GitHub Commit Activity (Year)" src="https://img.shields.io/github/commit-activity/y/Fe7rodrigues/sushi-restaurant" />
+<img alt="Github License" src="https://img.shields.io/github/license/Fe7rodrigues/sushi-restaurant" />
+</p>
 
 ---
 
@@ -39,11 +47,10 @@ Conquiste sua vaga é uma experiência online com muito conteúdo prático e des
 ---
 
 ## 📱 Layout mobile
-![Mobile](assets/img/preview-mobile.gif) 
+<img src="assets/img/preview-mobile.gif" width="300">
 
 ## 💻 Layout web
-
-![WEB](assets/img/preview-web.gif)
+<img src="assets/img/preview-web.gif" width="600">
 
 ---
 
