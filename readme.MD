@@ -43,7 +43,7 @@ Conquiste sua vaga é uma experiência online com muito conteúdo prático e des
 
 ## 💻 Layout web
 
-![WEB]
+![WEB](assets/img/preview-web.gif)
 
 ---
 
