@@ -51,9 +51,9 @@ Conquiste sua vaga é uma experiência online com muito conteúdo prático e des
 
 ```bash
 # clonar repositório
-git clone https://github.com/Fe7rodrigues/coffee-website
+git clone https://github.com/Fe7rodrigues/sushi-restaurant
 # entre no diretório
-cd coffee-website 
+cd sushi-restaurant
 ```
 
 ---
